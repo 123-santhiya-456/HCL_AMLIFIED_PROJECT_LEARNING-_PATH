@@ -12,6 +12,10 @@ from frontend.utils.demo_data import DEMO_SKILL_GAP, DEMO_USER
 
 st.set_page_config(page_title="Skill Gap — LearnPath AI", page_icon="📊", layout="wide")
 
+if not st.session_state.get("logged_in"):
+    st.switch_page("pages/0_Login.py")
+    st.stop()
+
 user_id = st.session_state.get("user_id", 1)
 demo_mode = st.session_state.get("demo_mode", True)
 
@@ -52,11 +56,11 @@ col_l, col_r = st.columns([3, 2])
 with col_l:
     st.markdown("### 📈 Current vs Target Proficiency")
     
-    skills = [sg["skill"] for sg in skill_gaps]
-    current = [sg["current"] for sg in skill_gaps]
-    target = [sg["target"] for sg in skill_gaps]
-    gaps = [sg["gap"] for sg in skill_gaps]
-    categories = [sg["gap_category"] for sg in skill_gaps]
+    skills = [sg.get("skill_name", sg.get("skill", "")) for sg in skill_gaps]
+    current = [sg.get("current_proficiency", sg.get("current", 0)) for sg in skill_gaps]
+    target = [sg.get("target_proficiency", sg.get("target", 100)) for sg in skill_gaps]
+    gaps = [sg.get("gap", 0) for sg in skill_gaps]
+    categories = [sg.get("gap_category", "") for sg in skill_gaps]
 
     # Color by gap category
     cat_colors = {
@@ -139,23 +143,25 @@ st.markdown("### 📋 Detailed Gap Analysis")
 GAP_ICONS = {"Strong": "🟢", "Minor Gap": "🔵", "Moderate Gap": "🟠", "Major Gap": "🔴"}
 
 for sg in skill_gaps:
-    icon = GAP_ICONS.get(sg["gap_category"], "⚪")
-    cat_color = cat_colors.get(sg["gap_category"], "#a0aec0")
-    progress_pct = int(sg["current"])
-    gap_val = sg["gap"]
+    skill_name = sg.get("skill_name", sg.get("skill", ""))
+    cur_val    = sg.get("current_proficiency", sg.get("current", 0))
+    tgt_val    = sg.get("target_proficiency", sg.get("target", 100))
+    gap_cat    = sg.get("gap_category", "")
+    icon       = GAP_ICONS.get(gap_cat, "⚪")
+    cat_color  = cat_colors.get(gap_cat, "#a0aec0")
 
     with st.container():
         c1, c2, c3, c4, c5 = st.columns([2.5, 3, 1, 1, 1.5])
         with c1:
-            st.markdown(f"<span style='font-weight:600;color:#e2e8f0;'>{icon} {sg['skill']}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='font-weight:600;color:#e2e8f0;'>{icon} {skill_name}</span>", unsafe_allow_html=True)
         with c2:
-            st.progress(progress_pct)
+            st.progress(int(cur_val))
         with c3:
-            st.markdown(f"<span style='color:#63b3ed;font-weight:700;'>{sg['current']:.0f}%</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:#63b3ed;font-weight:700;'>{cur_val:.0f}%</span>", unsafe_allow_html=True)
         with c4:
-            st.markdown(f"<span style='color:#48bb78;font-weight:700;'>{sg['target']:.0f}%</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:#48bb78;font-weight:700;'>{tgt_val:.0f}%</span>", unsafe_allow_html=True)
         with c5:
-            st.markdown(f"<span style='color:{cat_color};font-size:0.8rem;font-weight:600;'>{sg['gap_category']}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:{cat_color};font-size:0.8rem;font-weight:600;'>{gap_cat}</span>", unsafe_allow_html=True)
 
 # ─── Priority Skills ─────────────────────────────────────────────
 st.markdown("---")
@@ -164,11 +170,14 @@ if priority_skills:
     cols = st.columns(len(priority_skills))
     for i, skill in enumerate(priority_skills):
         with cols[i]:
-            sg = next((s for s in skill_gaps if s["skill"] == skill), {})
+            sg = next(
+                (s for s in skill_gaps
+                 if s.get("skill_name", s.get("skill", "")) == skill), {}
+            )
             st.markdown(f"""
             <div style='background:rgba(229,62,62,0.1);border:1px solid rgba(229,62,62,0.3);border-radius:12px;padding:16px;text-align:center;'>
                 <div style='font-size:0.7rem;color:#a0aec0;font-weight:700;letter-spacing:1px;'>PRIORITY {i+1}</div>
                 <div style='color:#e2e8f0;font-weight:700;font-size:0.95rem;margin:6px 0;'>{skill}</div>
-                <div style='color:#e53e3e;font-weight:700;font-size:1.2rem;'>Gap: {sg.get("gap",0):.0f}%</div>
+                <div style='color:#e53e3e;font-weight:700;font-size:1.2rem;'>Gap: {sg.get("gap", 0):.0f}%</div>
             </div>
             """, unsafe_allow_html=True)

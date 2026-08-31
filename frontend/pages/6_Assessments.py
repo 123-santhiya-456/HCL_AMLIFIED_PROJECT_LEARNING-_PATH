@@ -9,6 +9,10 @@ from frontend.utils import api
 
 st.set_page_config(page_title="Assessments — LearnPath AI", page_icon="📝", layout="wide")
 
+if not st.session_state.get("logged_in"):
+    st.switch_page("pages/0_Login.py")
+    st.stop()
+
 user_id = st.session_state.get("user_id", 1)
 demo_mode = st.session_state.get("demo_mode", True)
 

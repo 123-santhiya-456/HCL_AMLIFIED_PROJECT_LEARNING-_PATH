@@ -10,12 +10,25 @@ from frontend.utils.demo_data import DEMO_USER
 
 st.set_page_config(page_title="Learner Profile — LearnPath AI", page_icon="👤", layout="wide")
 
+# ── Auth guard ─────────────────────────────────────────────────────
+if not st.session_state.get("logged_in"):
+    st.switch_page("pages/0_Login.py")
+    st.stop()
+
 demo_mode = st.session_state.get("demo_mode", True)
 
 st.markdown("""
-<div style='background:linear-gradient(135deg,#667eea,#764ba2);border-radius:16px;padding:24px 32px;color:white;margin-bottom:24px;'>
-    <h2 style='margin:0;'>👤 Learner Profile</h2>
-    <p style='opacity:0.85;margin:4px 0 0;'>Tell us about yourself so we can personalize your learning journey.</p>
+<div style='
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 45%, #4c1d95 100%);
+    border: 1px solid rgba(102,126,234,0.25);
+    border-radius: 24px;
+    padding: 32px 44px;
+    color: white;
+    margin-bottom: 28px;
+    box-shadow: 0 20px 60px rgba(79,70,229,0.3);
+'>
+    <h2 style='margin:0;font-size:1.8rem;font-weight:900;letter-spacing:-0.5px;'>👤 Learner Profile</h2>
+    <p style='opacity:0.8;margin:6px 0 0;font-size:0.95rem;'>Tell us about yourself so we can build your personalized AI learning roadmap.</p>
 </div>
 """, unsafe_allow_html=True)
 
