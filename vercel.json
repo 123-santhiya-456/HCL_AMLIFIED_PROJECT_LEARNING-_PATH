@@ -1,0 +1,42 @@
+{
+    "version": 2,
+    "name": "learnpath-ai",
+    "builds": [
+        {
+            "src": "api/index.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "50mb",
+                "runtime": "python3.11"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "api/index.py"
+        },
+        {
+            "src": "/health",
+            "dest": "api/index.py"
+        },
+        {
+            "src": "/docs",
+            "dest": "api/index.py"
+        },
+        {
+            "src": "/openapi.json",
+            "dest": "api/index.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "api/index.py"
+        }
+    ],
+    "env": {
+        "PYTHONPATH": ".",
+        "DATABASE_URL": "sqlite:///./learnpath.db",
+        "LLM_PROVIDER": "gemini",
+        "BACKEND_URL": "https://learnpath-ai.vercel.app"
+    }
+}
