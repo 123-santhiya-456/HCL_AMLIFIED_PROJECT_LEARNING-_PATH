@@ -1,0 +1,340 @@
+{
+  "quizzes": [
+    {
+      "quiz_id": "Q001",
+      "skill": "Python",
+      "difficulty": "Beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which of the following is the correct way to create a list in Python?",
+          "options": ["a = (1, 2, 3)", "a = [1, 2, 3]", "a = {1, 2, 3}", "a = <1, 2, 3>"],
+          "answer": 1,
+          "explanation": "Lists in Python use square brackets []."
+        },
+        {
+          "id": 2,
+          "question": "What does the `len()` function return?",
+          "options": ["The last element", "The sum of elements", "The number of elements", "The type of the object"],
+          "answer": 2,
+          "explanation": "len() returns the number of items in an object."
+        },
+        {
+          "id": 3,
+          "question": "Which keyword is used to define a function in Python?",
+          "options": ["function", "def", "fun", "define"],
+          "answer": 1,
+          "explanation": "The `def` keyword is used to define functions in Python."
+        },
+        {
+          "id": 4,
+          "question": "What is the output of `print(type(3.14))`?",
+          "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'double'>"],
+          "answer": 1,
+          "explanation": "3.14 is a floating-point number, so type() returns float."
+        },
+        {
+          "id": 5,
+          "question": "How do you check if 'x' is in a list called 'my_list'?",
+          "options": ["my_list.contains(x)", "x in my_list", "my_list.has(x)", "x.exists(my_list)"],
+          "answer": 1,
+          "explanation": "The `in` operator checks membership in Python sequences."
+        }
+      ]
+    },
+    {
+      "quiz_id": "Q002",
+      "skill": "Machine Learning",
+      "difficulty": "Intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the purpose of the train-test split in machine learning?",
+          "options": ["To increase training data", "To evaluate model generalization on unseen data", "To reduce model complexity", "To improve training speed"],
+          "answer": 1,
+          "explanation": "Train-test split evaluates how well the model generalizes to unseen data."
+        },
+        {
+          "id": 2,
+          "question": "Which metric is most appropriate for an imbalanced classification problem?",
+          "options": ["Accuracy", "F1 Score", "Mean Squared Error", "R-squared"],
+          "answer": 1,
+          "explanation": "F1 Score balances precision and recall and is robust to class imbalance."
+        },
+        {
+          "id": 3,
+          "question": "What does overfitting mean in machine learning?",
+          "options": ["The model performs poorly on training data", "The model performs well on training but poorly on test data", "The model takes too long to train", "The model has too few parameters"],
+          "answer": 1,
+          "explanation": "Overfitting means the model memorizes training data but fails to generalize."
+        },
+        {
+          "id": 4,
+          "question": "Which algorithm is best suited for predicting a continuous numerical value?",
+          "options": ["Logistic Regression", "Decision Tree Classifier", "Linear Regression", "K-Nearest Neighbors Classifier"],
+          "answer": 2,
+          "explanation": "Linear Regression predicts continuous numerical outputs."
+        },
+        {
+          "id": 5,
+          "question": "What is cross-validation used for?",
+          "options": ["Transforming features", "Selecting the best model and hyperparameters", "Cleaning data", "Deploying models"],
+          "answer": 1,
+          "explanation": "Cross-validation helps estimate model performance and select hyperparameters robustly."
+        }
+      ]
+    },
+    {
+      "quiz_id": "Q003",
+      "skill": "Deep Learning",
+      "difficulty": "Intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the role of the activation function in a neural network?",
+          "options": ["To initialize weights", "To introduce non-linearity", "To normalize inputs", "To compute the loss"],
+          "answer": 1,
+          "explanation": "Activation functions introduce non-linearity, enabling networks to learn complex patterns."
+        },
+        {
+          "id": 2,
+          "question": "Which optimizer uses adaptive learning rates for each parameter?",
+          "options": ["SGD", "Batch Gradient Descent", "Adam", "Perceptron"],
+          "answer": 2,
+          "explanation": "Adam (Adaptive Moment Estimation) maintains adaptive learning rates per parameter."
+        },
+        {
+          "id": 3,
+          "question": "What problem does batch normalization help solve?",
+          "options": ["Vanishing gradients only", "Internal covariate shift", "Overfitting only", "Data imbalance"],
+          "answer": 1,
+          "explanation": "Batch normalization addresses internal covariate shift, stabilizing training."
+        },
+        {
+          "id": 4,
+          "question": "In CNNs, what does a pooling layer do?",
+          "options": ["Adds parameters to the network", "Reduces spatial dimensions while retaining important features", "Applies activation functions", "Connects all neurons"],
+          "answer": 1,
+          "explanation": "Pooling reduces spatial dimensions, reducing computation and providing translation invariance."
+        },
+        {
+          "id": 5,
+          "question": "What is dropout regularization?",
+          "options": ["Removing low-importance features", "Randomly deactivating neurons during training to prevent overfitting", "Reducing the learning rate", "Removing training samples"],
+          "answer": 1,
+          "explanation": "Dropout randomly sets neuron activations to zero during training to prevent co-adaptation."
+        }
+      ]
+    },
+    {
+      "quiz_id": "Q004",
+      "skill": "NLP",
+      "difficulty": "Intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does TF-IDF stand for?",
+          "options": ["Text Feature - Inverse Document Frequency", "Term Frequency - Inverse Document Frequency", "Token Feature - Index Document Factor", "Text Filter - Inverse Data Factor"],
+          "answer": 1,
+          "explanation": "TF-IDF = Term Frequency × Inverse Document Frequency, measures word importance."
+        },
+        {
+          "id": 2,
+          "question": "What is tokenization in NLP?",
+          "options": ["Converting text to numbers", "Breaking text into smaller units like words or subwords", "Removing stop words", "Translating text between languages"],
+          "answer": 1,
+          "explanation": "Tokenization splits raw text into tokens (words, subwords, or characters)."
+        },
+        {
+          "id": 3,
+          "question": "Which technique is used to reduce words to their base form (e.g., 'running' → 'run')?",
+          "options": ["Tokenization", "Lemmatization", "Vectorization", "Padding"],
+          "answer": 1,
+          "explanation": "Lemmatization reduces words to their dictionary base form."
+        },
+        {
+          "id": 4,
+          "question": "What is the primary advantage of word embeddings over one-hot encoding?",
+          "options": ["Smaller vocabulary size", "Captures semantic relationships between words", "Faster computation", "Requires no training"],
+          "answer": 1,
+          "explanation": "Word embeddings capture semantic similarity; similar words have similar vector representations."
+        },
+        {
+          "id": 5,
+          "question": "What does the attention mechanism in transformers compute?",
+          "options": ["Word frequency in documents", "Relevance scores between all pairs of tokens", "Sentence length normalization", "Part-of-speech tags"],
+          "answer": 1,
+          "explanation": "Attention computes weighted relevance scores between all token pairs in a sequence."
+        }
+      ]
+    },
+    {
+      "quiz_id": "Q005",
+      "skill": "RAG",
+      "difficulty": "Advanced",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the core idea behind Retrieval-Augmented Generation (RAG)?",
+          "options": ["Training a model on domain-specific data", "Augmenting LLM responses with retrieved relevant documents", "Generating synthetic training data", "Using multiple LLMs in parallel"],
+          "answer": 1,
+          "explanation": "RAG retrieves relevant documents from a knowledge base and provides them as context to the LLM."
+        },
+        {
+          "id": 2,
+          "question": "Which component in a RAG system converts text into dense vectors?",
+          "options": ["LLM Generator", "Embedding Model", "BM25 Ranker", "SQL Parser"],
+          "answer": 1,
+          "explanation": "An embedding model converts text chunks into dense vector representations for similarity search."
+        },
+        {
+          "id": 3,
+          "question": "What is chunking in the context of RAG?",
+          "options": ["Splitting model weights", "Breaking documents into smaller segments for indexing", "Grouping similar queries", "Merging retrieved results"],
+          "answer": 1,
+          "explanation": "Chunking splits documents into smaller pieces that fit within embedding and context windows."
+        },
+        {
+          "id": 4,
+          "question": "What does FAISS provide in a RAG pipeline?",
+          "options": ["LLM inference", "Efficient vector similarity search", "Document parsing", "API gateway"],
+          "answer": 1,
+          "explanation": "FAISS (Facebook AI Similarity Search) enables fast nearest-neighbor search over embeddings."
+        },
+        {
+          "id": 5,
+          "question": "What is the main advantage of RAG over fine-tuning for knowledge-intensive tasks?",
+          "options": ["RAG is always faster", "RAG allows updating knowledge without retraining the model", "RAG requires less memory", "RAG produces shorter responses"],
+          "answer": 1,
+          "explanation": "RAG allows dynamic knowledge updates by changing the retrieval corpus without model retraining."
+        }
+      ]
+    },
+    {
+      "quiz_id": "Q006",
+      "skill": "Statistics",
+      "difficulty": "Beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does the p-value represent in hypothesis testing?",
+          "options": ["The probability the null hypothesis is true", "The probability of observing results at least as extreme as the data, assuming H0 is true", "The significance threshold", "The effect size"],
+          "answer": 1,
+          "explanation": "p-value = P(observed data | H0 is true). Small p-value suggests evidence against H0."
+        },
+        {
+          "id": 2,
+          "question": "Which measure of central tendency is most resistant to outliers?",
+          "options": ["Mean", "Mode", "Median", "Variance"],
+          "answer": 2,
+          "explanation": "Median is robust to outliers as it depends only on rank, not actual values."
+        },
+        {
+          "id": 3,
+          "question": "What does standard deviation measure?",
+          "options": ["The average value", "The spread/dispersion of data around the mean", "The most frequent value", "The middle value"],
+          "answer": 1,
+          "explanation": "Standard deviation measures how much data values deviate from the mean on average."
+        },
+        {
+          "id": 4,
+          "question": "What is a normal distribution characterized by?",
+          "options": ["All values are equal", "Symmetric bell shape with mean=median=mode", "All values are positive", "Skewed distribution"],
+          "answer": 1,
+          "explanation": "Normal distribution is symmetric, bell-shaped, with mean = median = mode."
+        },
+        {
+          "id": 5,
+          "question": "What is correlation?",
+          "options": ["A measure of causation between variables", "A statistical measure of the relationship between two variables", "The average of two variables", "The difference between two variables"],
+          "answer": 1,
+          "explanation": "Correlation measures the strength and direction of linear relationship between two variables."
+        }
+      ]
+    },
+    {
+      "quiz_id": "Q007",
+      "skill": "AI Agents",
+      "difficulty": "Advanced",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the ReAct framework in AI agents?",
+          "options": ["A reinforcement learning algorithm", "A pattern combining Reasoning and Acting for LLM agents", "A React.js framework for AI apps", "A multi-GPU training framework"],
+          "answer": 1,
+          "explanation": "ReAct interleaves reasoning traces and action steps, enabling LLMs to plan and execute tasks."
+        },
+        {
+          "id": 2,
+          "question": "What is tool use in the context of AI agents?",
+          "options": ["Using physical tools in robotics", "Allowing an LLM to call external functions, APIs, or code", "Using debugging tools for AI", "Using GPU memory tools"],
+          "answer": 1,
+          "explanation": "Tool use lets agents call external APIs, databases, or code interpreters to extend capabilities."
+        },
+        {
+          "id": 3,
+          "question": "What is the purpose of memory in AI agent systems?",
+          "options": ["To store model weights", "To persist information across interactions enabling context-aware responses", "To speed up inference", "To reduce token usage"],
+          "answer": 1,
+          "explanation": "Agent memory enables persistence of facts, conversation history, and learned information."
+        },
+        {
+          "id": 4,
+          "question": "In multi-agent systems, what is an orchestrator agent?",
+          "options": ["An agent that learns from data", "An agent that coordinates and delegates tasks to other specialized agents", "An agent focused on data retrieval", "An agent that evaluates other agents"],
+          "answer": 1,
+          "explanation": "An orchestrator agent manages task decomposition and delegation to specialized sub-agents."
+        },
+        {
+          "id": 5,
+          "question": "What is 'hallucination' in the context of LLM-based agents?",
+          "options": ["The model processing visual data", "The model generating confident but factually incorrect information", "The model refusing to answer", "The model using too many tokens"],
+          "answer": 1,
+          "explanation": "Hallucination occurs when an LLM generates plausible-sounding but factually incorrect content."
+        }
+      ]
+    },
+    {
+      "quiz_id": "Q008",
+      "skill": "SQL",
+      "difficulty": "Beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which SQL clause is used to filter rows?",
+          "options": ["SELECT", "WHERE", "GROUP BY", "ORDER BY"],
+          "answer": 1,
+          "explanation": "WHERE filters rows based on a specified condition."
+        },
+        {
+          "id": 2,
+          "question": "What does a JOIN operation do in SQL?",
+          "options": ["Deletes duplicate rows", "Combines rows from two or more tables based on a related column", "Sorts the result set", "Groups rows by a column"],
+          "answer": 1,
+          "explanation": "JOIN combines rows from multiple tables based on matching column values."
+        },
+        {
+          "id": 3,
+          "question": "Which aggregate function returns the total sum?",
+          "options": ["AVG()", "COUNT()", "SUM()", "MAX()"],
+          "answer": 2,
+          "explanation": "SUM() calculates the total sum of a numeric column."
+        },
+        {
+          "id": 4,
+          "question": "What does GROUP BY do?",
+          "options": ["Filters rows based on conditions", "Groups rows with the same values into summary rows", "Orders the result set", "Selects unique values"],
+          "answer": 1,
+          "explanation": "GROUP BY groups rows sharing a value in specified columns for aggregate operations."
+        },
+        {
+          "id": 5,
+          "question": "What is the difference between WHERE and HAVING?",
+          "options": ["They are identical", "WHERE filters rows before grouping; HAVING filters after grouping", "HAVING is faster than WHERE", "WHERE works only with TEXT columns"],
+          "answer": 1,
+          "explanation": "WHERE filters before aggregation; HAVING filters after GROUP BY aggregation."
+        }
+      ]
+    }
+  ]
+}

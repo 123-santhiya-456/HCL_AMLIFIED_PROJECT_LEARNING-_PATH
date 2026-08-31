@@ -1,0 +1,54 @@
+skill,prerequisite
+NumPy,Python
+Pandas,NumPy
+Data Visualization,Pandas
+Machine Learning,Statistics
+Machine Learning,NumPy
+Machine Learning,Pandas
+Feature Engineering,Machine Learning
+Hyperparameter Tuning,Machine Learning
+Deep Learning,Machine Learning
+Deep Learning,Linear Algebra
+Deep Learning,Calculus
+NLP,Python
+NLP,Machine Learning
+Transformers,Deep Learning
+Transformers,NLP
+Embeddings,NLP
+Embeddings,Transformers
+RAG,Embeddings
+RAG,Transformers
+AI Agents,RAG
+AI Agents,LLM
+LLM,Transformers
+Prompt Engineering,LLM
+Generative AI,Deep Learning
+Computer Vision,Deep Learning
+Computer Vision,NumPy
+Recommendation Systems,Machine Learning
+Recommendation Systems,Linear Algebra
+Time Series,Statistics
+Time Series,Pandas
+MLOps,Machine Learning
+MLOps,Docker
+Data Engineering,SQL
+Data Engineering,Python
+FastAPI,Python
+Docker,Linux
+Cloud,Docker
+Explainable AI,Machine Learning
+Reinforcement Learning,Deep Learning
+Reinforcement Learning,Statistics
+Graph ML,Deep Learning
+Multimodal AI,Transformers
+Multimodal AI,Computer Vision
+Speech AI,Deep Learning
+Speech AI,NLP
+AI Security,LLM
+AI Security,Prompt Engineering
+Knowledge Graphs,SQL
+Knowledge Graphs,Python
+Bayesian ML,Statistics
+Bayesian ML,Machine Learning
+Causal Inference,Statistics
+Causal Inference,Machine Learning

@@ -1,0 +1,31 @@
+skill_id,skill_name,domain,description,target_proficiency_data_scientist,target_proficiency_ai_engineer,target_proficiency_ml_engineer,target_proficiency_nlp_engineer,target_proficiency_data_analyst,target_proficiency_data_engineer
+S001,Python,Programming,General-purpose programming language for data and AI,90,95,90,85,70,80
+S002,SQL,Data,Query language for relational databases,80,60,70,50,90,90
+S003,Statistics,Mathematics,Probability hypothesis testing and statistical inference,90,70,85,70,80,60
+S004,Linear Algebra,Mathematics,Vectors matrices and linear transformations,70,85,85,70,50,40
+S005,Calculus,Mathematics,Derivatives gradients and optimization methods,60,80,80,65,40,30
+S006,NumPy,Programming,Numerical computing with arrays and matrices,85,85,90,75,70,75
+S007,Pandas,Programming,Data manipulation and analysis with DataFrames,90,70,80,65,85,80
+S008,Data Visualization,Analytics,Creating charts dashboards and visual data stories,80,60,65,55,90,60
+S009,Machine Learning,AI/ML,Building predictive models and learning algorithms,95,85,95,75,60,50
+S010,Deep Learning,AI/ML,Neural networks and gradient-based learning,70,95,90,85,30,30
+S011,NLP,AI/ML,Natural language processing and text understanding,60,85,70,95,40,35
+S012,Transformers,AI/ML,Attention mechanism and transformer-based LLMs,50,95,80,95,25,25
+S013,Embeddings,AI/ML,Dense vector representations for semantic search,45,95,75,90,20,30
+S014,RAG,AI/ML,Retrieval-augmented generation systems,40,95,65,80,15,25
+S015,AI Agents,AI/ML,Autonomous AI agent orchestration and tool use,35,95,60,70,10,20
+S016,LLM,AI/ML,Large language model integration and fine-tuning,40,95,70,85,15,20
+S017,Computer Vision,AI/ML,Image processing and visual pattern recognition,40,70,70,35,20,20
+S018,Feature Engineering,AI/ML,Creating and selecting features for ML models,80,65,90,65,50,50
+S019,MLOps,Engineering,ML lifecycle management CI/CD for ML systems,60,75,90,60,30,60
+S020,Data Engineering,Engineering,ETL pipelines data lakes and warehouse design,50,55,65,45,70,95
+S021,FastAPI,Programming,High-performance Python REST API framework,55,75,70,55,30,60
+S022,Docker,DevOps,Container technology for application packaging,55,70,75,50,30,70
+S023,Cloud,Engineering,AWS GCP Azure cloud platforms for AI and data,55,75,75,55,40,70
+S024,Git,Programming,Version control and collaborative development,75,80,80,75,65,75
+S025,Generative AI,AI/ML,Generative models for text images and audio,40,95,70,80,20,20
+S026,Prompt Engineering,AI/ML,Designing effective prompts for LLM applications,50,90,65,80,30,25
+S027,Recommendation Systems,AI/ML,Algorithms for personalized content recommendation,70,65,80,55,40,45
+S028,Time Series,AI/ML,Temporal data analysis and forecasting,65,55,70,45,55,50
+S029,Hyperparameter Tuning,AI/ML,Model optimization and AutoML techniques,70,65,85,60,35,35
+S030,Explainable AI,AI/ML,SHAP LIME and model interpretability methods,75,65,80,60,45,35

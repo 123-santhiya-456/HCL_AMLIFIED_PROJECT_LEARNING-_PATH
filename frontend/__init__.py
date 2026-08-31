@@ -1,0 +1,1 @@
+"""LearnPath AI — frontend package"""

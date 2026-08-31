@@ -1,0 +1,106 @@
+course_id,title,description,skills,difficulty,duration_hours,prerequisites,career_roles,resource_type,rating
+C001,Python for Beginners,Complete beginner course covering Python syntax variables data types and control flow,Python,Beginner,20,None,"Data Scientist,AI Engineer,Backend Developer,Data Analyst",Course,4.8
+C002,Intermediate Python Programming,Covers OOP file handling exceptions modules and packages in Python,Python,Intermediate,25,Python,"Data Scientist,AI Engineer,Backend Developer",Course,4.7
+C003,Python Data Structures & Algorithms,Deep dive into lists dictionaries sets tuples and algorithmic thinking,Python,Intermediate,30,Python,"Data Scientist,Software Engineer,AI Engineer",Course,4.6
+C004,Advanced Python: Decorators & Metaclasses,Advanced Python patterns for professional development,Python,Advanced,20,Intermediate Python,"Software Engineer,AI Engineer",Course,4.5
+C005,SQL for Data Analysis,Comprehensive SQL from SELECT statements to window functions and CTEs,SQL,Beginner,18,None,"Data Scientist,Data Analyst,Backend Developer",Course,4.8
+C006,Advanced SQL & Query Optimization,Query performance tuning indexing strategies and advanced SQL patterns,SQL,Advanced,22,SQL,"Data Engineer,Data Scientist,Backend Developer",Course,4.6
+C007,Statistics for Data Science,Probability distributions hypothesis testing confidence intervals and statistical inference,Statistics,Beginner,25,None,"Data Scientist,Data Analyst,ML Engineer",Course,4.7
+C008,Applied Statistics with Python,Apply statistical concepts using scipy and statsmodels in Python,Statistics,Intermediate,20,Statistics;Python,"Data Scientist,ML Engineer",Course,4.6
+C009,Linear Algebra for Machine Learning,Vectors matrices eigenvalues and their applications in ML,Linear Algebra,Intermediate,22,None,"ML Engineer,Data Scientist,AI Engineer",Course,4.7
+C010,Calculus for Machine Learning,Derivatives gradients and optimization basics for ML practitioners,Calculus,Beginner,18,None,"ML Engineer,Data Scientist,AI Engineer",Course,4.5
+C011,NumPy Fundamentals,Arrays broadcasting linear algebra and scientific computing with NumPy,NumPy,Beginner,15,Python,"Data Scientist,ML Engineer,Data Engineer",Course,4.8
+C012,Pandas for Data Analysis,DataFrames series indexing groupby merging and data cleaning,Pandas,Beginner,20,NumPy,"Data Scientist,Data Analyst,Data Engineer",Course,4.9
+C013,Data Wrangling with Pandas,Advanced Pandas techniques for messy real-world datasets,Pandas,Intermediate,18,Pandas,"Data Scientist,Data Analyst",Course,4.6
+C014,Data Visualization with Matplotlib & Seaborn,Create informative charts plots and dashboards for data analysis,Data Visualization,Beginner,15,Pandas,"Data Scientist,Data Analyst",Course,4.7
+C015,Plotly & Dash for Interactive Dashboards,Build interactive web-based visualizations and dashboards with Plotly Dash,Data Visualization,Intermediate,20,Data Visualization,"Data Scientist,Data Analyst,Full Stack Developer",Course,4.8
+C016,Machine Learning Fundamentals,Supervised unsupervised learning regression classification and model evaluation,Machine Learning,Beginner,35,Statistics;NumPy;Pandas,"Data Scientist,ML Engineer,AI Engineer",Course,4.9
+C017,Scikit-learn for Practitioners,Practical ML with scikit-learn including pipelines cross-validation and tuning,Machine Learning,Intermediate,25,Machine Learning,"Data Scientist,ML Engineer",Course,4.8
+C018,Machine Learning Model Deployment,Deploy ML models using Flask FastAPI and cloud platforms,Machine Learning,Intermediate,22,Machine Learning,"ML Engineer,Backend Developer,AI Engineer",Course,4.6
+C019,Feature Engineering & Selection,Craft powerful features for ML models using domain knowledge and automation,Feature Engineering,Intermediate,20,Machine Learning,"Data Scientist,ML Engineer",Course,4.7
+C020,Hyperparameter Tuning & AutoML,Optimize ML models with Grid Search Random Search Optuna and AutoML tools,Hyperparameter Tuning,Advanced,18,Machine Learning,"Data Scientist,ML Engineer",Course,4.5
+C021,Deep Learning with PyTorch,Neural network fundamentals CNNs RNNs and training with PyTorch,Deep Learning,Intermediate,40,Machine Learning;Linear Algebra;Calculus,"AI Engineer,ML Engineer,Research Scientist",Course,4.9
+C022,Deep Learning with TensorFlow & Keras,Build and train deep neural networks using TensorFlow 2 and Keras API,Deep Learning,Intermediate,38,Machine Learning;Linear Algebra,"AI Engineer,ML Engineer",Course,4.8
+C023,Convolutional Neural Networks,CNN architectures for image classification detection and segmentation,Deep Learning,Advanced,30,Deep Learning,"AI Engineer,Computer Vision Engineer",Course,4.8
+C024,Recurrent Neural Networks & LSTMs,Sequence models for time-series text and speech with RNNs LSTMs and GRUs,Deep Learning,Advanced,28,Deep Learning,"AI Engineer,NLP Engineer",Course,4.7
+C025,Natural Language Processing Fundamentals,Text preprocessing feature extraction sentiment analysis and NLP pipelines,NLP,Beginner,25,Python;Machine Learning,"NLP Engineer,AI Engineer,Data Scientist",Course,4.7
+C026,Advanced NLP with spaCy & NLTK,Named entity recognition POS tagging dependency parsing and advanced NLP,NLP,Intermediate,22,NLP,"NLP Engineer,AI Engineer",Course,4.6
+C027,Transformers & Attention Mechanism,Self-attention multi-head attention and the Transformer architecture from scratch,Transformers,Intermediate,30,Deep Learning;NLP,"AI Engineer,NLP Engineer,Research Scientist",Course,4.9
+C028,BERT & GPT: Pre-trained Language Models,Fine-tuning BERT GPT and other language models for downstream tasks,Transformers,Advanced,28,Transformers,"AI Engineer,NLP Engineer",Course,4.8
+C029,Hugging Face Transformers Library,Practical guide to using Hugging Face for model loading fine-tuning and inference,Transformers,Intermediate,20,Transformers,"AI Engineer,NLP Engineer,ML Engineer",Course,4.9
+C030,Word Embeddings & Semantic Search,Word2Vec GloVe FastText and modern embedding techniques,Embeddings,Beginner,18,NLP,"AI Engineer,NLP Engineer",Course,4.6
+C031,Sentence Transformers & Dense Retrieval,Semantic sentence embeddings with SBERT and dense vector retrieval,Embeddings,Intermediate,20,Word Embeddings;Transformers,"AI Engineer,RAG Engineer",Course,4.8
+C032,Vector Databases & FAISS,Store and search high-dimensional embeddings using FAISS Pinecone and Weaviate,Embeddings,Intermediate,18,Embeddings,"AI Engineer,RAG Engineer,Backend Developer",Course,4.7
+C033,RAG Foundations: Retrieval-Augmented Generation,Core concepts of RAG architecture retrieval augmentation and generation,RAG,Intermediate,22,Embeddings;Transformers,"AI Engineer,RAG Engineer",Course,4.9
+C034,Building RAG Systems with LangChain,Production RAG pipelines with LangChain document loaders and retrievers,RAG,Advanced,30,RAG;Vector Databases,"AI Engineer,RAG Engineer,Full Stack Developer",Course,4.8
+C035,Advanced RAG Techniques,Re-ranking HyDE query routing multi-hop retrieval and RAG evaluation,RAG,Advanced,25,RAG,"AI Engineer,RAG Engineer,Research Scientist",Course,4.7
+C036,LLM Fundamentals: How Large Language Models Work,Architecture pre-training tokenization and inference of modern LLMs,LLM,Beginner,20,Transformers,"AI Engineer,ML Engineer",Course,4.8
+C037,Prompt Engineering Mastery,Zero-shot few-shot chain-of-thought prompting and advanced techniques,Prompt Engineering,Beginner,15,LLM,"AI Engineer,Product Manager,Developer",Course,4.9
+C038,LLM Fine-tuning & PEFT,LoRA QLoRA instruction tuning and parameter-efficient fine-tuning,LLM,Advanced,30,LLM;Transformers,"AI Engineer,ML Engineer,Research Scientist",Course,4.7
+C039,AI Agents & Agentic Systems,ReAct tool use memory and orchestration of autonomous AI agents,AI Agents,Intermediate,25,LLM;RAG,"AI Engineer,Full Stack Developer",Course,4.9
+C040,LangChain for Developers,Build LLM-powered applications with LangChain chains tools and memory,AI Agents,Intermediate,22,LLM,"AI Engineer,Backend Developer,Full Stack Developer",Course,4.8
+C041,LlamaIndex for RAG Applications,Build knowledge-based QA systems with LlamaIndex and LLMs,RAG,Intermediate,20,RAG;LLM,"AI Engineer,Full Stack Developer",Course,4.7
+C042,Multi-Agent Systems with AutoGen,Design and deploy multi-agent conversational AI systems,AI Agents,Advanced,25,AI Agents,"AI Engineer,Research Scientist",Course,4.6
+C043,Introduction to Generative AI,Overview of GANs VAEs diffusion models and large language models,Generative AI,Beginner,15,Deep Learning,"AI Engineer,Creative Developer",Course,4.8
+C044,Diffusion Models & Image Generation,Stable Diffusion DALL-E architecture and image generation techniques,Generative AI,Advanced,28,Deep Learning;Transformers,"AI Engineer,Computer Vision Engineer",Course,4.7
+C045,Generative AI with Gemini API,Build applications using Google Gemini multimodal AI capabilities,Generative AI,Beginner,12,Prompt Engineering,"AI Engineer,Full Stack Developer",Course,4.9
+C046,OpenAI API & GPT Integration,Build production apps with ChatGPT API function calling and assistants,Generative AI,Beginner,15,Prompt Engineering,"AI Engineer,Full Stack Developer,Backend Developer",Course,4.8
+C047,MLOps Fundamentals,Version control for ML experiment tracking model registry and CD4ML,MLOps,Intermediate,30,Machine Learning,"ML Engineer,Data Scientist",Course,4.7
+C048,MLflow for Experiment Tracking,Track ML experiments models and deployments with MLflow,MLOps,Intermediate,18,MLOps,"ML Engineer,Data Scientist",Course,4.6
+C049,Kubernetes for ML Engineers,Container orchestration for scalable ML training and serving,MLOps,Advanced,25,MLOps;Docker,"ML Engineer,DevOps Engineer",Course,4.5
+C050,Data Engineering Fundamentals,ETL pipelines data lakes and warehouse design principles,Data Engineering,Beginner,28,SQL;Python,"Data Engineer,Data Architect",Course,4.7
+C051,Apache Spark for Big Data,Distributed data processing with PySpark for large-scale datasets,Data Engineering,Intermediate,30,Data Engineering;Python,"Data Engineer,Data Scientist",Course,4.6
+C052,Apache Kafka for Real-time Streaming,Build real-time data pipelines with Kafka producers consumers and streams,Data Engineering,Advanced,25,Data Engineering,"Data Engineer,Backend Developer",Course,4.5
+C053,FastAPI for Python Developers,Build high-performance REST APIs with FastAPI Pydantic and async Python,FastAPI,Beginner,18,Python,"Backend Developer,AI Engineer,Full Stack Developer",Course,4.9
+C054,REST API Design Best Practices,Design scalable RESTful APIs with proper authentication versioning and docs,API Design,Intermediate,15,FastAPI,"Backend Developer,AI Engineer",Course,4.7
+C055,Docker for Developers,Containerize applications with Docker build images and compose services,Docker,Beginner,15,None,"DevOps Engineer,Backend Developer,ML Engineer",Course,4.8
+C056,Git & GitHub for Professionals,Version control branching strategies CI/CD with GitHub Actions,Git,Beginner,12,None,"All Roles",Course,4.8
+C057,Linux Command Line Mastery,Shell scripting file management process control and automation,Linux,Beginner,15,None,"DevOps Engineer,Backend Developer,ML Engineer",Course,4.7
+C058,Cloud Computing with AWS,S3 EC2 Lambda and core AWS services for ML and web applications,Cloud,Beginner,30,Docker,"Cloud Architect,ML Engineer,Backend Developer",Course,4.7
+C059,Google Cloud for ML & AI,Vertex AI AutoML BigQuery and Google Cloud AI services,Cloud,Intermediate,25,Machine Learning,"ML Engineer,AI Engineer",Course,4.6
+C060,Time Series Analysis & Forecasting,Decomposition stationarity ARIMA SARIMA and neural forecasting,Time Series,Intermediate,25,Statistics;Pandas,"Data Scientist,ML Engineer",Course,4.7
+C061,Computer Vision Fundamentals,Image processing feature detection object detection with OpenCV,Computer Vision,Beginner,20,NumPy;Python,"Computer Vision Engineer,AI Engineer",Course,4.6
+C062,Object Detection with YOLO,Real-time object detection using YOLOv8 and Ultralytics,Computer Vision,Advanced,22,Deep Learning;Computer Vision,"Computer Vision Engineer,AI Engineer",Course,4.8
+C063,Reinforcement Learning Basics,MDP Q-learning policy gradient methods and OpenAI Gym,Reinforcement Learning,Intermediate,30,Deep Learning;Statistics,"Research Scientist,AI Engineer,Robotics Engineer",Course,4.6
+C064,Ethics in AI & Responsible AI,Bias fairness transparency interpretability and ethical AI deployment,AI Ethics,Beginner,12,Machine Learning,"All Roles",Course,4.7
+C065,Explainable AI with SHAP & LIME,Model interpretability techniques for understanding black-box predictions,Explainable AI,Intermediate,18,Machine Learning,"Data Scientist,ML Engineer",Course,4.7
+C066,Data Science Project Management,Agile CRISP-DM and end-to-end data science project lifecycle,Project Management,Beginner,10,None,"Data Scientist,Project Manager",Course,4.5
+C067,A/B Testing & Experimentation,Statistical experimental design for product and ML experiments,A/B Testing,Intermediate,15,Statistics,"Data Scientist,Data Analyst,Product Manager",Course,4.7
+C068,Recommendation Systems,Collaborative filtering content-based and hybrid recommendation algorithms,Recommendation Systems,Intermediate,25,Machine Learning;Linear Algebra,"ML Engineer,Data Scientist",Course,4.8
+C069,Graph Neural Networks,GCN GAT GraphSAGE and graph-based deep learning,Graph ML,Advanced,28,Deep Learning;Graph Theory,"Research Scientist,AI Engineer",Course,4.6
+C070,Knowledge Graphs & Ontologies,Build query and reason over knowledge graphs with RDF SPARQL and Neo4j,Knowledge Graphs,Intermediate,22,SQL;Python,"Data Engineer,AI Engineer",Course,4.5
+C071,Bayesian Machine Learning,Bayesian inference probabilistic programming with PyMC and Stan,Bayesian ML,Advanced,25,Statistics;Machine Learning,"Research Scientist,Data Scientist",Course,4.6
+C072,Anomaly Detection Techniques,Statistical ML and deep learning approaches for detecting anomalies,Anomaly Detection,Intermediate,20,Machine Learning,"Data Scientist,ML Engineer",Course,4.6
+C073,Text Classification & Sentiment Analysis,Build text classifiers using ML and LLM approaches,NLP,Beginner,15,NLP,"NLP Engineer,Data Scientist",Course,4.7
+C074,Speech Recognition & TTS,Automatic speech recognition and text-to-speech with Whisper and modern TTS,Speech AI,Advanced,25,Deep Learning;NLP,"AI Engineer,Product Developer",Course,4.5
+C075,Multimodal AI Models,Vision-language models CLIP GPT-4V and multimodal AI applications,Multimodal AI,Advanced,28,Transformers;Computer Vision,"AI Engineer,Research Scientist",Course,4.7
+C076,Data Science Career Bootcamp,End-to-end practical data science from EDA to model deployment,Data Science,Beginner,40,Python;SQL,"Data Scientist,Data Analyst",Course,4.8
+C077,Business Intelligence with Power BI,Build dashboards reports and analytics workflows with Power BI,Business Intelligence,Beginner,20,SQL,"Data Analyst,Business Analyst",Course,4.7
+C078,Tableau for Data Visualization,Create interactive business dashboards and visualizations with Tableau,Business Intelligence,Beginner,18,SQL,"Data Analyst,Business Analyst",Course,4.6
+C079,Introduction to Machine Learning (Coursera Style),Broad ML introduction covering regression classification and ML workflow,Machine Learning,Beginner,24,Python;Statistics,"Data Scientist,ML Engineer",Course,4.9
+C080,Neural Networks from Scratch,Build neural networks in pure Python/NumPy without ML libraries,Deep Learning,Advanced,20,Linear Algebra;Calculus;Python,"Research Scientist,ML Engineer",Course,4.7
+C081,Streamlit for Data Scientists,Build ML dashboards and data apps with Streamlit,Streamlit,Beginner,12,Python,"Data Scientist,ML Engineer,AI Engineer",Course,4.8
+C082,Gradio for ML Demos,Create shareable ML model demos and UIs with Gradio,Streamlit,Beginner,10,Python,"ML Engineer,AI Engineer",Course,4.7
+C083,FastAPI + SQLAlchemy Backend,Full-stack Python backend with FastAPI SQLAlchemy and PostgreSQL,FastAPI,Intermediate,25,FastAPI;SQL,"Backend Developer,Full Stack Developer",Course,4.7
+C084,Redis for Caching & Queues,High-performance caching session management and task queues with Redis,Backend,Intermediate,15,Python,"Backend Developer,Data Engineer",Course,4.5
+C085,WebSockets & Real-time Applications,Build real-time apps with WebSockets Server-Sent Events and async Python,Backend,Intermediate,18,FastAPI,"Backend Developer,Full Stack Developer",Course,4.6
+C086,Hugging Face Spaces Deployment,Deploy ML models and apps on Hugging Face Spaces for free,Deployment,Beginner,10,Streamlit;Machine Learning,"ML Engineer,AI Engineer",Course,4.8
+C087,End-to-End ML Project: House Price Prediction,Complete ML project from data collection to deployment with interpretability,Machine Learning,Intermediate,20,Machine Learning;Pandas,"Data Scientist,ML Engineer",Course,4.8
+C088,End-to-End NLP Project: News Classifier,Build a production NLP classifier from data to REST API deployment,NLP,Intermediate,22,NLP;FastAPI,"NLP Engineer,Data Scientist",Course,4.7
+C089,End-to-End CV Project: Face Recognition System,Build a complete face detection and recognition pipeline,Computer Vision,Advanced,25,Computer Vision;Deep Learning,"Computer Vision Engineer,AI Engineer",Course,4.7
+C090,End-to-End RAG Project: Document QA System,Build a complete RAG system for enterprise document question-answering,RAG,Advanced,28,RAG;FastAPI;Embeddings,"AI Engineer,Full Stack Developer",Course,4.9
+C091,Mathematics for Data Science Crash Course,Essential algebra statistics and probability for aspiring data scientists,Mathematics,Beginner,15,None,"Data Scientist,ML Engineer",Course,4.7
+C092,Excel for Data Analysis,Pivot tables VLOOKUP and data cleaning with Excel for analysts,Excel,Beginner,10,None,"Data Analyst,Business Analyst",Course,4.5
+C093,Pandas Advanced: Time Series & Performance,Advanced Pandas for time series handling and performance optimization,Pandas,Advanced,20,Pandas,"Data Engineer,Data Scientist",Course,4.6
+C094,Polars: Modern DataFrame Library,Ultra-fast data manipulation with Polars as a Pandas alternative,Data Engineering,Intermediate,15,Pandas,"Data Engineer,Data Scientist",Course,4.6
+C095,dbt for Analytics Engineering,Transform data in warehouses using dbt models tests and docs,Data Engineering,Intermediate,20,SQL,"Data Engineer,Analytics Engineer",Course,4.7
+C096,Langsmith & LLM Observability,Monitor debug and evaluate LLM chains and agents in production,LLM,Advanced,15,LangChain,"AI Engineer,ML Engineer",Course,4.6
+C097,LLM Security & Red Teaming,Prompt injection jailbreaks and defense strategies for LLM applications,AI Security,Advanced,18,LLM;Prompt Engineering,"AI Engineer,Security Engineer",Course,4.5
+C098,Agentic RAG with Tools & Memory,Build advanced AI agents with persistent memory tool use and RAG,AI Agents,Advanced,30,AI Agents;RAG,"AI Engineer,Research Scientist",Course,4.8
+C099,CrewAI for Multi-Agent Workflows,Orchestrate multi-agent collaborative AI workflows with CrewAI,AI Agents,Intermediate,20,AI Agents,"AI Engineer,Full Stack Developer",Course,4.7
+C100,Production AI Systems Architecture,Design scalable reliable and observable AI systems for production,System Design,Advanced,25,MLOps;RAG;AI Agents,"AI Engineer,Solutions Architect",Course,4.8
+C101,Interview Prep: Data Science & ML,Complete preparation for data science and ML technical interviews,Career,Intermediate,20,Machine Learning;Statistics,"Data Scientist,ML Engineer",Course,4.7
+C102,Interview Prep: AI Engineer,System design ML fundamentals and coding prep for AI engineering roles,Career,Advanced,25,AI Agents;RAG;LLM,"AI Engineer",Course,4.8
+C103,Causal Inference for Data Scientists,Causal reasoning DAGs matching and IV estimation for policy and science,Causal Inference,Advanced,22,Statistics;Machine Learning,"Data Scientist,Research Scientist",Course,4.6
+C104,Probabilistic Machine Learning,Uncertainty quantification Gaussian processes and probabilistic deep learning,Advanced ML,Advanced,28,Bayesian ML;Deep Learning,"Research Scientist,ML Engineer",Course,4.5
+C105,Python Automation & Scripting,Automate workflows web scraping API integration and task automation,Python,Beginner,15,Python,"Developer,Data Engineer,QA Engineer",Course,4.7
